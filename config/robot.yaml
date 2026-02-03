@@ -1,0 +1,22 @@
+network:
+  interface: "enp3s0"
+  dds_domain_id: 0
+
+arm:
+  joint_names: [j1, j2, j3, j4, j5, j6]
+  limits:
+    j1: {min: -3.14, max: 3.14}
+    ...
+
+control:
+  command_rate_hz: 200
+  default_speed_scale: 0.2
+
+behaviors:
+  poses_file: "config/poses.yaml"
+  stage_pause_s: 0.2
+
+logging:
+  folder: "logs"
+  level: "INFO"
+  jsonl: true
