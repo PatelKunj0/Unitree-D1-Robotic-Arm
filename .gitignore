@@ -1,18 +1,23 @@
-# Logs
-logs/
-*.log
+# ROS
+build/
+install/
+log/
 
-# Virtual environments
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
 venv/
-env/
-ENV/
+.venv/
+
+# AnyGrasp
+external/anygrasp_sdk/
+**/license*.zip
+**/license/
 
 # IDE
 .vscode/
-
-# OS
-.DS_Store
-Thumbs.db
 
 # Project specific
 .history
